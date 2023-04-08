@@ -1,0 +1,227 @@
+/* THEME DEFAULTS */
+:root {
+  --white: white;
+  --white1: #f0f6ff;
+  --white2: #eaeff6;
+
+  --grey: #333333;
+  --grey1: #666666;
+  --grey2: #999999;
+  --grey3: #aaaaaa;
+  --grey4: #cccccc;
+
+  --black: #000000;
+  --black1: #000000;
+  --black2: #000000;
+
+  --purple: #7676d6;
+  --purple1: #5e5ec9;
+  --purple2: #a5a5f6;
+  --purple3: #c5c5ff;
+  --purple4: #eeeefd;
+
+  --blue: #1f287a;
+  --blue1: #96d9ff;
+  --blue2: #d7e1ee;
+
+  --pink: #e174dd;
+
+  --orange: #ff8c22;
+  --orange1: #cf731c;
+
+  --red: #ff0000;
+  --red1: #c43737;
+
+  --green: #069706;
+  --green1: #086108;
+
+  /* distance: 5px, radius: 15px */
+  --level0: 0px 0px 0px #d1d1d9, -0px -0px 0px #ffffff;
+  --level1: 5px 5px 10px #a1a1a9, -5px -5px 10px #ffffff;
+  --level2: 8px 8px 16px #d1d1d9, -8px -8px 16px #ffffff;
+  --level3: 12px 12px 24px #d1d1d9, -12px -12px 24px #ffffff;
+  --level4: 16px 16px 32px #d1d1d9, -16px -16px 32px #ffffff;
+  --level5: 20px 20px 40px #d1d1d9, -20px -20px 40px #ffffff;
+
+  --radius: 100%;
+  --radius0: 0px;
+  --radius1: 5px;
+  --radius2: 8px;
+  --radius3: 12px;
+  --radius4: 16px;
+
+  --font-size-1: 10px;
+  --font-size: 12px;
+  --font-size1: 14px;
+  --font-size2: 16px;
+  --font-size3: 18px;
+  --font-size4: 25px;
+  --font-size5: 40px;
+  --font-size6: 60px;
+  --font-size7: 80px;
+  --font-size8: 100px;
+  --font-size9: 400px;
+
+  --font-weight: 200; /* thin */
+  --font-weight1: 400; /* normal */
+  --font-weight2: 600; /* semi bold */
+  --font-weight3: 700; /* bold */
+  --font-weight4: 900; /* extra bold */
+}
+
+/* CSS RESET */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+html * {
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ALL CUSTOM CSS */

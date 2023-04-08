@@ -1,0 +1,76 @@
+.about {
+  height: 100%;
+  display: flex;
+  padding-top: 20px;
+  padding: var(--radius2);
+  padding-bottom: 30px;
+}
+
+.left,
+.right {
+  flex: 1;
+  position: relative;
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  background-color: var(--white);
+  padding: 10px 10px 35px 10px;
+  box-shadow: 10px 10px 1px #66668f, -10px -10px 1px #eff0e8;
+}
+.sign {
+  text-align: center;
+}
+.right {
+  position: relative;
+}
+
+.message {
+  /* position: absolute; */
+  right: 0px;
+  /* width: 300px; */
+  /* border: 1px solid red; */
+  font-size: var(--font-size3);
+  font-weight: var(--font-weight4);
+  color: var(--purple);
+  font-family: "Dancing Script", cursive;
+}
+
+/* large devices */
+@media only screen and (max-width: 1200px) {
+}
+
+/* laptops */
+@media only screen and (max-width: 992px) {
+}
+
+/* tablets */
+@media only screen and (max-width: 768px) {
+}
+
+/* mobile phones */
+@media only screen and (max-width: 576px) {
+  .about {
+    display: block;
+  }
+
+  .left {
+    margin-top: 30px;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .message {
+    text-align: center;
+  }
+  /* 
+  .left {
+    display: none;
+  } */
+}

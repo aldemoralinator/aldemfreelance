@@ -1,0 +1,208 @@
+.send-email {
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: var(--radius1);
+  background-color: var(--white1);
+  box-shadow: 3px 0px 2px #c9670d, -2px -3px 2px #cf9c59;
+  overflow: hidden;
+}
+
+.tab {
+  width: 100%;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+
+  color: var(--white);
+  font-size: var(--font-size1);
+  background-color: var(--orange);
+  box-shadow: 0px 3px 2px #c9670d;
+
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  font-size: var(--font-size1);
+  color: var(--white1);
+}
+
+.contacts-active {
+  animation-name: contactsActive;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.contacts-inactive {
+  animation-name: contactsInactive;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.active {
+  animation-name: active;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.contacts {
+  height: 0px;
+  overflow: hidden;
+}
+
+.inactive {
+  animation-name: inactive;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes contactsActive {
+  0% {
+    width: 300px;
+  }
+  50% {
+    width: 450px;
+    height: 0px;
+  }
+  100% {
+    width: 450px;
+    height: 275px;
+  }
+}
+
+@keyframes contactsInactive {
+  0% {
+    width: 450px;
+    height: 275px;
+  }
+  50% {
+    width: 450px;
+    height: 0px;
+  }
+  100% {
+    width: 300px;
+  }
+}
+
+@keyframes active {
+  0% {
+    width: 300px;
+  }
+  50% {
+    width: 450px;
+    height: 25px;
+  }
+  100% {
+    width: 450px;
+    height: 300px;
+  }
+}
+
+@keyframes inactive {
+  0% {
+    width: 450px;
+    height: 300px;
+  }
+  50% {
+    width: 450px;
+    height: 25px;
+  }
+  100% {
+    width: 300px;
+  }
+}
+
+/* large devices */
+@media only screen and (max-width: 1200px) {
+}
+
+/* laptops */
+@media only screen and (max-width: 992px) {
+}
+
+/* tablets */
+@media only screen and (max-width: 768px) {
+  .send-email {
+    position: fixed;
+  }
+  .tab {
+    font-size: var(--font-size1);
+  }
+
+  @keyframes active {
+    0% {
+      width: 250px;
+    }
+    50% {
+      width: 300px;
+      height: 25px;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  @keyframes inactive {
+    0% {
+      width: 300px;
+      height: 300px;
+    }
+    50% {
+      width: 300px;
+      height: 25px;
+    }
+    100% {
+      width: 250px;
+    }
+  }
+
+  @keyframes contactsActive {
+    0% {
+      width: 250px;
+    }
+    50% {
+      width: 300px;
+      height: 0px;
+    }
+    100% {
+      width: 300px;
+      height: 275px;
+    }
+  }
+
+  @keyframes contactsInactive {
+    0% {
+      width: 300px;
+      height: 275px;
+    }
+    50% {
+      width: 300px;
+      height: 0px;
+    }
+    100% {
+      width: 250px;
+    }
+  }
+}
+
+/* mobile phones */
+@media only screen and (max-width: 576px) {
+}

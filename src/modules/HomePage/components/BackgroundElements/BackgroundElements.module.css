@@ -1,0 +1,115 @@
+.background-elements {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  clip-path: inset(0 0 0 0);
+}
+
+.bge-circle1::before {
+  position: fixed;
+  top: 120px;
+  right: min(440px, calc(50vw - 530px));
+  width: 40px;
+  height: 40px;
+  background: #ff8c22;
+  box-shadow: 1px 1px 2px #545492, -1px -1px 2px #cfcfec;
+
+  content: "";
+  border-radius: 80% 10% 100% 5% / 55% 55% 100% 50%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 8s linear infinite;
+  -webkit-animation: sliderShape 8s linear infinite;
+}
+
+.bge-circle2::before {
+  position: fixed;
+  top: max(50vh, 400px);
+  left: min(15vw, calc(50vw - 650px));
+  width: 160px;
+  height: 160px;
+  background-color: var(--purple3);
+  background: linear-gradient(145deg, #d3d3ff, #b7b7e2);
+  box-shadow: 1px 1px 2px #545492, -1px -1px 2px #cfcfec;
+
+  content: "";
+  border-radius: 72% 37% 92% 25% / 45% 45% 90% 56%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 4s linear infinite;
+  -webkit-animation: sliderShape 4s linear infinite;
+}
+
+.bge-circle3::before {
+  position: fixed;
+  top: max(60vh, 350px);
+  right: min(10vw, calc(50vw - 700px));
+  width: 500px;
+  height: 500px;
+  background-color: var(--blue2);
+
+  content: "";
+  border-radius: 100% 70% 70% 100% / 100% 100% 70% 70%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShapeBig 10s linear infinite;
+  -webkit-animation: sliderShapeBig 10s linear infinite;
+}
+
+@keyframes sliderShape {
+  0%,
+  100% {
+    border-radius: 32% 68% 80% 20% / 55% 55% 45% 45%;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  34% {
+    border-radius: 80% 20% 56% 44% / 20% 19% 81% 80%;
+    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  67% {
+    border-radius: 100% 50% 50% 100% / 100% 100% 50% 50%;
+    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+  }
+}
+
+@keyframes sliderShapeBig {
+  0%,
+  100% {
+    border-radius: 50% 50% 55% 45% / 50% 50% 50% 50%;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  34% {
+    border-radius: 55% 45% 52% 48% / 45% 44% 51% 50%;
+    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  67% {
+    border-radius: 100% 70% 70% 100% / 100% 100% 70% 70%;
+    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+  }
+}
+
+/* large devices */
+@media only screen and (max-width: 1200px) {
+}
+
+/* laptops */
+@media only screen and (max-width: 992px) {
+}
+
+/* tablets */
+@media only screen and (max-width: 768px) {
+  .background-elements {
+    width: calc(100% - 15px);
+  }
+}
+
+/* mobile phones */
+@media only screen and (max-width: 576px) {
+  .background-elements {
+    display: none;
+  }
+}

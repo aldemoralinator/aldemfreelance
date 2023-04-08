@@ -1,0 +1,179 @@
+.background {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC")
+    repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 15s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 15s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 15s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 15s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.canvas {
+  position: relative;
+  width: 900px;
+  height: auto;
+
+  border-radius: var(--radius2);
+  background: var(--white1);
+  box-shadow: var(--level1);
+}
+
+.download-resume {
+  z-index: 5;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  /* width: 50px; */
+  height: 20px;
+  background-color: var(--orange);
+  box-shadow: 2px 2px 2px rgb(196, 102, 102);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  padding: 0 20px;
+
+  font-size: 10px;
+  font-weight: var(--font-weight2);
+  color: var(--black);
+}
+
+.download-resume:hover {
+  box-shadow: 1px 1px 1px rgb(196, 102, 102);
+}
+
+.dl-resume-icon {
+  font-size: 10px;
+  color: var(--black);
+}
+
+.canvas-circle1::before {
+  position: fixed;
+  top: 50px;
+  left: calc(50vw - 515px);
+  width: 80px;
+  height: 80px;
+  background-color: var(--purple);
+  background: linear-gradient(145deg, #7e7ee5, #6a6ac1);
+  box-shadow: 2px 2px 5px #171757, -2px -2px 5px #dbdbee;
+
+  content: "";
+  border-radius: 80% 10% 100% 5% / 55% 55% 100% 50%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShapeBig 8s linear infinite;
+  -webkit-animation: sliderShapeBig 8s linear infinite;
+}
+
+@keyframes sliderShapeBig {
+  0%,
+  100% {
+    border-radius: 50% 50% 55% 45% / 50% 50% 50% 50%;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  34% {
+    border-radius: 55% 45% 52% 48% / 45% 44% 51% 50%;
+    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  67% {
+    border-radius: 100% 70% 70% 100% / 100% 100% 70% 70%;
+    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+  }
+}
+
+/* large devices */
+@media only screen and (max-width: 1200px) {
+}
+
+/* laptops */
+@media only screen and (max-width: 992px) {
+}
+
+/* tablets */
+@media only screen and (max-width: 768px) {
+  .background {
+    display: block;
+  }
+
+  .canvas {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .canvas-circle1 {
+    left: -20px;
+  }
+}
+
+/* mobile phones */
+@media only screen and (max-width: 576px) {
+}
+
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 0px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 0px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 0px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 0px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 0px 0px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 0px 0px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 0px 0px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 0px 0px;
+  }
+}

@@ -1,0 +1,274 @@
+.nav-labels {
+  position: absolute;
+  right: 0px;
+  top: -250px;
+  width: 400px;
+  height: 300px;
+}
+
+.blue1 {
+  color: var(--blue1) !important;
+  text-shadow: 3px 3px 5px var(--grey3), -3px -3px 5px var(--white) !important;
+}
+
+.purple2 {
+  color: var(--purple2) !important;
+  text-shadow: 3px 3px 5px var(--grey3), -3px -3px 5px var(--white) !important;
+}
+
+.pink {
+  color: var(--pink) !important;
+  text-shadow: 3px 3px 5px var(--grey3), -3px -3px 5px var(--white) !important;
+}
+
+.orange {
+  color: var(--orange) !important;
+  text-shadow: 3px 3px 5px var(--grey3), -3px -3px 5px var(--white) !important;
+}
+
+.nav-labels > div {
+  position: absolute;
+  color: #eff2f9;
+  text-transform: lowercase;
+  text-shadow: 1px 1px 2px var(--grey4), -1px -1px 2px var(--white);
+  font-size: var(--font-size5);
+  font-weight: var(--font-weight4);
+  caret-color: #262626;
+  outline: none;
+  user-select: none;
+}
+
+.nav-labels > div:hover {
+  text-shadow: 3px 3px 5px var(--grey3), -3px -3px 5px var(--white);
+}
+
+.nav-labels-letter-W,
+.nav-labels-letter-A,
+.nav-labels-letter-S1,
+.nav-labels-letter-H {
+  text-transform: capitalize !important;
+}
+
+.nav-labels-letter-W {
+  right: 180px;
+  top: 170px;
+}
+
+.nav-labels-letter-o {
+  right: 120px;
+  top: 80px;
+}
+
+.nav-labels-letter-r {
+  right: 20px;
+  top: 10px;
+}
+
+.nav-labels-letter-k {
+  right: 20px;
+  top: 100px;
+}
+
+.nav-labels-letter-S1 {
+  right: 170px;
+  top: 0px;
+}
+
+.nav-labels-letter-i {
+  right: 155px;
+  top: 120px;
+}
+
+.nav-labels-letter-l1 {
+  right: 100px;
+  top: 150px;
+}
+
+.nav-labels-letter-l2 {
+  right: 20px;
+  top: 180px;
+}
+
+.nav-labels-letter-s2 {
+  right: 70px;
+  top: 40px;
+}
+
+.nav-labels-letter-A {
+  right: 70px;
+  top: -30px;
+}
+
+.nav-labels-letter-b {
+  right: 160px;
+  top: 60px;
+}
+
+.nav-labels-letter-u {
+  right: 70px;
+  top: 100px;
+}
+
+.nav-labels-letter-t {
+  right: 140px;
+  top: 180px;
+}
+
+.nav-labels-letter-H {
+  right: 120px;
+  top: 25px;
+}
+
+.nav-labels-letter-e {
+  right: 60px;
+  top: 180px;
+}
+
+/* large devices */
+@media only screen and (max-width: 1200px) {
+}
+
+/* laptops */
+@media only screen and (max-width: 992px) {
+}
+
+/* tablets adaptive */
+@media only screen and (max-width: 900px) {
+  .nav-labels-letter-W {
+    right: calc(180px + (100vw - 900px) * (180 * 0.003));
+  }
+
+  .nav-labels-letter-o {
+    right: calc(120px + (100vw - 900px) * (120 * 0.003));
+  }
+
+  .nav-labels-letter-r {
+    right: calc(20px + (100vw - 900px) * (20 * 0.003));
+  }
+
+  .nav-labels-letter-k {
+    right: calc(20px + (100vw - 900px) * (20 * 0.003));
+  }
+
+  .nav-labels-letter-S1 {
+    right: calc(170px + (100vw - 900px) * (170 * 0.003));
+  }
+
+  .nav-labels-letter-i {
+    right: calc(155px + (100vw - 900px) * (155 * 0.003));
+  }
+
+  .nav-labels-letter-l1 {
+    right: calc(100px + (100vw - 900px) * (100 * 0.003));
+  }
+
+  .nav-labels-letter-l2 {
+    right: calc(20px + (100vw - 900px) * (20 * 0.003));
+  }
+
+  .nav-labels-letter-s2 {
+    right: calc(70px + (100vw - 900px) * (70 * 0.003));
+  }
+
+  .nav-labels-letter-A {
+    right: calc(70px + (100vw - 900px) * (70 * 0.003));
+  }
+
+  .nav-labels-letter-b {
+    right: calc(160px + (100vw - 900px) * (160 * 0.003));
+  }
+
+  .nav-labels-letter-u {
+    right: calc(70px + (100vw - 900px) * (70 * 0.003));
+  }
+
+  .nav-labels-letter-t {
+    right: calc(140px + (100vw - 900px) * (140 * 0.003));
+  }
+
+  .nav-labels-letter-H {
+    right: calc(120px + (100vw - 900px) * (120 * 0.003));
+  }
+
+  .nav-labels-letter-e {
+    right: calc(60px + (100vw - 900px) * (60 * 0.003));
+  }
+}
+
+/* tablets */
+@media only screen and (max-width: 768px) {
+  .nav-labels > div {
+    font-size: var(--font-size4);
+  }
+
+  .nav-labels-letter-W {
+    right: calc(180px + (100vw - 900px) * (180 * 0.002));
+  }
+
+  .nav-labels-letter-o {
+    right: calc(120px + (100vw - 900px) * (120 * 0.002));
+  }
+
+  .nav-labels-letter-r {
+    right: calc(20px + (100vw - 900px) * (20 * 0.002));
+  }
+
+  .nav-labels-letter-k {
+    right: calc(20px + (100vw - 900px) * (20 * 0.002));
+  }
+
+  .nav-labels-letter-S1 {
+    right: calc(170px + (100vw - 900px) * (170 * 0.002));
+  }
+
+  .nav-labels-letter-i {
+    right: calc(155px + (100vw - 900px) * (155 * 0.002));
+  }
+
+  .nav-labels-letter-l1 {
+    right: calc(100px + (100vw - 900px) * (100 * 0.002));
+  }
+
+  .nav-labels-letter-l2 {
+    right: calc(20px + (100vw - 900px) * (20 * 0.002));
+  }
+
+  .nav-labels-letter-s2 {
+    right: calc(70px + (100vw - 900px) * (70 * 0.002));
+  }
+
+  .nav-labels-letter-A {
+    right: calc(70px + (100vw - 900px) * (70 * 0.002));
+  }
+
+  .nav-labels-letter-b {
+    right: calc(160px + (100vw - 900px) * (160 * 0.002));
+  }
+
+  .nav-labels-letter-u {
+    right: calc(70px + (100vw - 900px) * (70 * 0.002));
+  }
+
+  .nav-labels-letter-t {
+    right: calc(140px + (100vw - 900px) * (140 * 0.002));
+  }
+
+  .nav-labels-letter-H {
+    right: calc(120px + (100vw - 900px) * (120 * 0.002));
+  }
+
+  .nav-labels-letter-e {
+    right: calc(60px + (100vw - 900px) * (60 * 0.002));
+  }
+}
+
+/* tablets adaptive */
+@media only screen and (max-width: 700px) {
+  .nav-labels {
+    display: none;
+  }
+}
+
+/* mobile phones */
+@media only screen and (max-width: 576px) {
+}
