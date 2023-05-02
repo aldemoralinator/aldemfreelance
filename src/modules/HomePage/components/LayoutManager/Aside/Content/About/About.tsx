@@ -13,8 +13,8 @@ const About: React.FC<Props> = (Props) => {
             // loader={myLoader} // tech debt
             src="/about2.jpg"
             alt="Picture of the author"
-            width={185}
-            height={231}
+            width={166}
+            height={208}
           />
         </div>
       </div>

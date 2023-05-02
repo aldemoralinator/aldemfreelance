@@ -1,9 +1,9 @@
 import styles from "./Hire.module.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ClickWave from "@/ui/ClickWave/ClickWave";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 type Props = {};
 
@@ -22,10 +22,24 @@ const Hire: React.FC<Props> = (Props) => {
         <div className={styles["socials"]}>
           <span className={styles["socials-label"]}>Follow me on:</span>
           <span className={styles["socials-links"]}>
-            <FacebookIcon className={styles["socials-icon"]} />
-            <TwitterIcon className={styles["socials-icon"]} />
-            <InstagramIcon className={styles["socials-icon"]} />
-            <GitHubIcon className={styles["socials-icon"]} />
+            <a target="_blank" href="https://www.linkedin.com/in/aldemdemoral/">
+              <LinkedInIcon className={styles["socials-icon"]} />
+            </a>
+
+            <a target="_blank" href="https://github.com/aldemoralinator">
+              <GitHubIcon className={styles["socials-icon"]} />
+            </a>
+
+            <a
+              target="_blank"
+              href="https://www.instagram.com/aldemoralinator/"
+            >
+              <InstagramIcon className={styles["socials-icon"]} />
+            </a>
+
+            <a target="_blank" href="https://www.facebook.com/aldemoralinator/">
+              <FacebookIcon className={styles["socials-icon"]} />
+            </a>
           </span>
         </div>
       </div>
