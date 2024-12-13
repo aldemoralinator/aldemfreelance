@@ -31,10 +31,90 @@
 }
 
 .click {
+  position: absolute;
+  top: 20px;
+  left: 20px;
   font-size: 12px;
   font-weight: var(--font-weight1);
   color: var(--white);
   text-shadow: 1px 1px 1px var(--purple);
+  
+
+}
+
+.click-label {
+  position: absolute;
+  top: 10px;
+  animation: clicking-label 0.7s ease-out infinite alternate;
+  -webkit-animation: clicking-label 0.7s ease-out infinite alternate;
+  -moz-animation: clicking-label 0.7s ease-out infinite alternate;
+  -o-animation: clicking-label 0.7s ease-out infinite alternate;
+}
+
+.click-icon {
+  position: absolute;
+  top: 15px;
+  font-size: 32px;
+
+  animation: clicking 0.7s ease-out infinite alternate;
+  -webkit-animation: clicking 0.7s ease-out infinite alternate;
+  -moz-animation: clicking 0.7s ease-out infinite alternate;
+  -o-animation: clicking 0.7s ease-out infinite alternate;
+}
+
+@keyframes clicking-label {
+  from {
+    transform: scale(1.1)
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes clicking {
+  from {
+    color: #6b6bac;
+    top: 12px;
+    left: 3px;
+    transform: scale(1)
+
+  }
+  to {
+    color: #222289;
+    top: 17px;
+    left: 15px;
+    transform: scale(1.5);
+  }
+}
+@-webkit-keyframes clicking {
+  from {
+    
+    transform: scale(1)
+  }
+  to {
+    /* Styles at the end of the animation */
+    transform: scale(1.3);
+  }
+}
+@-moz-keyframes clicking {
+  from {
+    color: red;
+    transform: scale(1)
+  }
+  to {
+    /* Styles at the end of the animation */
+    transform: scale(1.3);
+  }
+}
+@-o-keyframes clicking {
+  from {
+    color: red;
+    transform: scale(1)
+  }
+  to {
+    /* Styles at the end of the animation */
+    transform: scale(1.3);
+  }
 }
 
 .nav-tiles-item:hover > div {

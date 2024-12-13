@@ -2,6 +2,30 @@ import { Skill, WorkDetails } from "@/types/details";
 
 export const WORK_DETAILS: WorkDetails[] = [
   {
+    company: "Accenture | Samsung",
+    position: "Senior Software Engineer",
+    details:
+      "Deployed to Samsung to develop new features to official samsung e-commerce website",
+    links: [
+      {
+        url: "https://www.samsung.com/bg/",
+        name: "Samsung E-commerce",
+      },
+    ],
+    startDate: "January 1, 2020",
+    endDate: "January 1, 2020",
+    tags: [
+      "FullTime",
+      "Angular",
+      "Spartacus",
+      "Hybris",
+      "SpringBoot",
+      "Microservices",
+      "Java",
+    ],
+    isFulltime: true,
+  },
+  {
     company: "CloudStaff, Inc | London Stocks Exchange",
     position: "Senior Software Engineer",
     details:

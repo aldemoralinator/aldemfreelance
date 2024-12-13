@@ -4,6 +4,7 @@ import NavLabels from "./NavLabels/NavLabels";
 import styles from "./Navigation.module.css";
 import { useState } from "react";
 import { useGlobalContext } from "@/modules/HomePage/Context/store";
+import TouchAppIcon from '@mui/icons-material/TouchApp';
 
 type Props = {};
 
@@ -29,7 +30,14 @@ const Navigation: React.FC<Props> = (Props) => {
           className={styles[tileProps.className]}
           onClick={() => handleTileClick(tileProps.page.name)}
         >
-          {tileProps.isInitial && <div className={styles["click"]}>click!</div>}
+          {tileProps.isInitial && 
+            <div className={styles["click"]}>
+              <div className={styles["click-label"]}>skills</div>
+              <TouchAppIcon className={styles["click-icon"]}/>
+            </div>
+          }
+
+          {/* {tileProps.isInitial && <div className={styles["click"]}>click!</div>} */}
         </div>
       </div>
     );
